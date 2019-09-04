@@ -1,5 +1,5 @@
 
-## Solidity 문법을 정리해보자
+## Solidity 문법을 정리해보자(remix에서 작업을 하자)
 
 <p>참조: https://xayahfirst.tistory.com/14 </p>
 
