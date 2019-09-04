@@ -7,7 +7,7 @@ contract Lottery {
 
 	// 응모자 수
 	uint public numofApplicants;
-//
+
 	// 당첨자 정보
 	address public winnerAddress;
 	
