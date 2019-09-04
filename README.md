@@ -1,4 +1,3 @@
-## solidity 에 대해 알아보자
 
 ## Solidity 문법을 정리해보자
 
