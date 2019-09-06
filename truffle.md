@@ -84,6 +84,12 @@ $ balance.toNumber()
 $ let newbalance = await MyContract.getBalance(accounts[0])
 $ newbalance.toNumber()
 
-
 ```
+```
+$ let testContract = await TestContract.deployed()
+$ testContract.getValue()
+$ testContract.setValue('hello')
+$ testContract.getValue()
+```
+
 
