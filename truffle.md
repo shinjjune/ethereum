@@ -60,6 +60,12 @@ $ truffle migrate --reset
 마이그레인션(Migration)은 응용 프로그램의 계약 상태를 변경하여 한 상태에서 다음 상태로 이동시키는 전개 스크립트입니다. 첫 번째 마이그레이션의 경우 새 코드를 배포하는 것이지만 시간이 지남에 따라 다른 마이그레이션은 데이터를 이동하거나 계약을 새로운 것으로 대체 할 수 있습니다.
 
 
+
+### 테스트
+
+메타코인 test> metacoin.js 테스트가 우리가 한 명령이 잘 동작하는지 확인하는 과정, 잘못된 코드가 있는지 체크하는 과정
+
+
 ```
 $ let Mycontract = await Metacoin.deployed
 $ accounts
@@ -85,8 +91,21 @@ $ testContract.setValue('hello')
 $ testContract.getValue()
 ```
 
+test>metacoin.js
 
-### 테스트
+(test>TestMetaCoin.sol 삭제 하면 된다.)
 
-메타코인 test> metacoin.js 테스트가 우리가 한 명령이 잘 동작하는지 확인하는 과정, 잘못된 코드가 있는지 체크하는 과정
+```
+contract('MetaCoin', async(accounts) => {
+  console.log(accounts);
+  const metaCoinInstance = await MetaCoin.deployed();
+  const balance = await metaCoinInstance.getBalance.call(accounts[0]);
+  console.log('balance accounts[0] = ', balance);
+  const metaCoinEthBalance = (await metaCoinInstance.getBalanceInEth.call(accounts[0])).toNumber();
+  console.log('eth balance accounts[0] = ', metaCoinEthBalance);
+  await metaCoinInstance.sendCoin(accounts[1], 1000, { from: accounts[0] });
+
+```
+
+
 
