@@ -36,9 +36,7 @@ IT 기술을 이용해 계약 내역을 자동으로 실행하는 것을 스마�
 
 ## 블록체인/스마트 계약의 취약점과 공격원리
 
-참고 url: https://dasp.co/
-
-     url: https://allblackk.tistory.com/357
+참고 url: https://dasp.co/      &&&     url: https://allblackk.tistory.com/357
 
 #### dasp(Decentralized Application Security Project)_top10
 
