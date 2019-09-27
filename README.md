@@ -34,5 +34,12 @@ IT 기술을 이용해 계약 내역을 자동으로 실행하는 것을 스마�
 'Proof of ~'로 시작하는 용어는 기술적인 의미뿐만 아니라 개념을 설명할 때도 자주 사용하므로 상황에 따라 용어 각각의 정확한 의미를 이해해야 합니다.
 
 
+## 블록체인/스마트 계약의 취약점과 공격원리
 
+참고 url: https://dasp.co/
+     url: https://allblackk.tistory.com/357
+
+#### dasp(Decentralized Application Security Project)_top10
+
+1. 
 
